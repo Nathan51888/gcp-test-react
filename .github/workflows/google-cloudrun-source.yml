@@ -50,7 +50,7 @@ on:
     branches: [ "main" ]
 
 env:
-  PROJECT_ID:  gcp-test-react # TODO: update Google Cloud project id
+  PROJECT_ID:  gcp-test-417203 # TODO: update Google Cloud project id
   SERVICE: gcp-test-react # TODO: update Cloud Run service name
   REGION: us-central1 # TODO: update Cloud Run service region
 
