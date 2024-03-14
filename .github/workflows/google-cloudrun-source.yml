@@ -66,6 +66,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup node
+        uses: actions/setup-node@v4.0.2
+
+      - name: Install deps
+        working-directory: ./react-app
+        run: npm install
+
+      - name: Build
+        working-directory: ./react-app
+        run: npm run build
+
       - name: Google Auth
         id: auth
         uses: 'google-github-actions/auth@v2.1.2'
